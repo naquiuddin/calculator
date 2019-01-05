@@ -1,0 +1,54 @@
+.container {
+  width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.display-row {
+  height: 120px;
+  background: black;
+  outline: 1px solid black;
+  color: #ffffff;
+  font-size: 26px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.btn-row {
+  display: flex;
+  align-items: stretch;
+}
+
+.btn {
+  background: #f3f3e6;
+  border:0;
+  flex: 1;
+  font-size: 18px;
+  padding: 0;
+  width: auto;
+  outline: 1px solid black;
+  box-shadow: none;
+  height: 120px;
+}
+
+.btn:hover {
+  background: #f5f5be;
+}
+
+.btn-orange {
+  background-color: #FF8303;
+}
+
+.btn-orange:hover {
+  background-color: #FD5602;
+}
+
+.double {
+  flex: 2;
+}
+
+.triple {
+  flex: 3;
+}
