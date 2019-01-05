@@ -74,10 +74,19 @@ var handleOperations = function(event) {
     secondOperand = '0';
     console.log("Doing clear");
   } else if(operationType === 'bsp') {
-    
+    if(activeOperator != null) {
+      secondOperand = secondOperand.slice(0,-1);
+    }
+    else {
+      firstOperand = firstOperand.slice(0,-1);
+    }
     console.log("Doing backspace");
   }
-  display(firstOperand);
+  if(activeOperator != null){
+    display(secondOperand);
+  } else {
+    display(firstOperand);
+  }
 }
 
 operands.forEach(function(button) {
