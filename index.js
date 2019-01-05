@@ -75,10 +75,10 @@ var handleOperations = function(event) {
     console.log("Doing clear");
   } else if(operationType === 'bsp') {
     if(activeOperator != null) {
-      secondOperand = secondOperand.slice(0,-1);
+      secondOperand = secondOperand.slice(0,-1)=='' ? '0' : secondOperand.slice(0,-1);
     }
     else {
-      firstOperand = firstOperand.slice(0,-1);
+      firstOperand = firstOperand.slice(0,-1)=='' ? '0' : firstOperand.slice(0,-1);
     }
     console.log("Doing backspace");
   }
